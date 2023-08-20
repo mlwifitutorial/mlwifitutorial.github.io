@@ -21,6 +21,17 @@ body, html {
 
 .menu {
   display: none;
+
+.mask {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+img {max-width: 100%;}
+
 }
 </style>
 </head>
@@ -71,10 +82,10 @@ body, html {
 	  border-radius: 50%;
 	}
 	</style>
-	<img src="/images/szott.png" alt="Szymon Szott" style="width:200px">
-	<img src="/images/kosek-szott.jpg" alt="Katarzyna Kosek-Szott" style="width:200px">
-	<img src="/images/bellalta.jpg" alt="Boris Bellalta" style="width:200px">
-	<img src="/images/wilhelmi.jpg" alt="Francesc Wilhelmi" style="width:200px">
+	<div class="mask"><img src="/images/szott.png" alt="Szymon Szott" /></div>
+	<div class="mask"><img src="/images/kosek-szott.jpg" alt="Katarzyna Kosek-Szott" /></div>
+	<div class="mask"><img src="/images/bellalta.jpg" alt="Boris Bellalta" /></div>
+	<div class="mask"><img src="/images/wilhelmi.jpg" alt="Francesc Wilhelmi" /></div>
   </div>
 </div>
 
