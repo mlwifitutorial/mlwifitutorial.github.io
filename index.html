@@ -69,13 +69,35 @@ body, html {
     <style>
 	img {
 	  border-radius: 50%;
-	  width: 100;
+
+	  .column {
+		  float: left;
+		  width: 25%;
+		  padding: 5px;
+		}
+
+		/* Clear floats after image containers */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
 	}
 	</style>
-	<img src="/images/szott.png" alt="Szymon Szott" />
-	<img src="/images/kosek-szott.jpg" alt="Katarzyna Kosek-Szott">
-	<img src="/images/bellalta.jpg" alt="Boris Bellalta">
-	<img src="/images/wilhelmi.jpg" alt="Francesc Wilhelmi">
+	<div class="row">
+	  <div class="column">
+	    <img src="/images/szott.png" alt="Szymon Szott" style="width:100%">
+	  </div>
+	  <div class="column">
+	    <img src="/images/kosek-szott.jpg" alt="Katarzyna Kosek-Szott" style="width:100%">
+	  </div>
+	  <div class="column">
+	    <img src="/images/bellalta.jpg" alt="Boris Bellalta" style="width:100%">
+	  </div>
+	  <div class="column">
+	    <img src="/images/wilhelmi.jpg" alt="Francesc Wilhelmi" style="width:100%">
+	  </div>
+	</div>
   </div>
 </div>
 
